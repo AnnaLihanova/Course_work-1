@@ -3,7 +3,7 @@ package ru.skypro.middle;
 import ru.skypro.min.Employee;
 
 import static ru.skypro.min.Employee.*;
-import static ru.skypro.min.Employee.printDepartmentMinSalary;
+import static ru.skypro.min.Main.*;
 
 public class Middle_Main {
     public static void main(String[] args) {

@@ -2,9 +2,6 @@ package ru.skypro.hard;
 
 import ru.skypro.min.Employee;
 
-import static ru.skypro.min.Employee.*;
-import static ru.skypro.min.Employee.printEmployeeDepartmentWhoHasMax;
-
 public class Hard_Main {
     public static void main(String[] args) {
         EmployeeBook employeeBook = new EmployeeBook(10);
@@ -21,11 +18,15 @@ public class Hard_Main {
 
 
         employeeBook.deleteEmployee("Козлов", "Игорь", "Александрович");
+
         employeeBook.addNewEmployee(new Employee("Жданов", "Олег", "Романович", 5, 56000));
         employeeBook.changeSalary("Алехина", "Виктория", "Степановна", 88000);
         employeeBook.changeDepartment("Алехина", "Виктория", "Степановна", 5);
         employeeBook.printListByDepartment();
-
+        employeeBook.deleteEmployee("Власов", "Вячеслав", "Арнольдович");
+        employeeBook.printAllAboutEmployee();
+        employeeBook.printDepartmentMonthlySalary(3);
+        employeeBook.printListByDepartment();
     }
 }
 
