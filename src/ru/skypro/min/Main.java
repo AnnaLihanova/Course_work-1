@@ -34,12 +34,14 @@ public class Main {
     public static void printAveradgeSunMonthlySalary(Employee[] employees) {
         float averadgeSunMonthlySalary = 0;
         float sumMonthlySalary = 0;
+        int numCounter = 0;
         for (Employee employee : employees) {
             if (employee != null) {
                 sumMonthlySalary += employee.getSalary();
-                averadgeSunMonthlySalary = sumMonthlySalary / employees.length;
+                numCounter++;
             }
         }
+        averadgeSunMonthlySalary = sumMonthlySalary / numCounter;
         System.out.println("Среднее значение зарплаты в месяц: " + averadgeSunMonthlySalary);
     }
 
